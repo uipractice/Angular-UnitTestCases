@@ -24,5 +24,13 @@ describe('VoterComponent', () => {
     let el:HTMLElement=de.nativeElement
     expect(el.innerText).toContain('21')
   });
+  
+  
+  it('should increase the total votes when I click the upvote button',()=>{
+    let button=fixture.debugElement.query(By.css('glyphicon-menu-up'))
+    component.upVote()
+    expect(component.totalVotes).toBe(1)
+  })
+  
  
 });

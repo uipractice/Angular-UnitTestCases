@@ -19,6 +19,10 @@ export class VoterComponent {
 
     this.vote.emit({ myVote: this.myVote });
   }
+  downVote(){
+    if(this.myVote==-1)
+    return;
+  }
 
   
 

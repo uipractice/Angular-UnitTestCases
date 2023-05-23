@@ -7,11 +7,10 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TodosComponent } from './2-todos/todos.component';
-import { VoterComponent } from './1-voter/voter.component';
+import { VoterComponent } from './property-and-event-binding-test-case/voter.component';
 
 import { routes } from './app.routes';
 import { UsersComponent } from './users/users.component';
-// import { NavComponent } from './nav/nav.component';
 import { HighlightDirective } from './highlight.directive';
 import { GreeterComponent } from './greeter/greeter.component'; 
 
@@ -22,7 +21,6 @@ import { GreeterComponent } from './greeter/greeter.component';
     TodosComponent,
     VoterComponent,
     UsersComponent,
-    // NavComponent,
     HighlightDirective,
     GreeterComponent
   ],

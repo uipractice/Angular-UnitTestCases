@@ -1,9 +1,10 @@
-import { HomeComponent } from './home/home.component';
-import { TodosComponent } from './2-todos/todos.component';
-import { UsersComponent } from './users/users.component'; 
+import { HomeComponent } from "./routingTestcase/home/home.component";
+import { SearchComponent } from "./routingTestcase/search/search.component";
+
 
 export const routes = [
-  { path: 'users', component: UsersComponent },
-  { path: 'todos', component: TodosComponent },
-  { path: '', component: HomeComponent }
+  {path:'',rediredtTo:'home',pathMatch:'full'},
+  {path:'home',component:HomeComponent},
+  {path:'search',component:SearchComponent}
+  
 ];
